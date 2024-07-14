@@ -112,21 +112,25 @@ class _TaskCardState extends State<TaskCard> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text(StringConstants.taskDelete),
-          content: const Text(StringConstants.deleteMessage),
+          content:  Text(StringConstants.deleteMessage, style: Theme.of(context).textTheme.displayMedium),
           actions: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop(); 
-              },
-              child: const Text(StringConstants.cancel),
-            ),
+            cancelButton(),
             ElevatedButton(
               onPressed: () {
                 widget.onDismissed();
                 Navigator.of(context).pop(); 
               },
-              child: const Text(StringConstants.delete),
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+              ),
+              child: Text(
+                StringConstants.delete,
+                style: TextStyle(
+                  color: ColorConstants.instance.white,
+                  fontSize: 15.sp,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
           ],
         );
