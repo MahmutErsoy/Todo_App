@@ -16,5 +16,10 @@ class ColorConstants {
   Color whisper = const Color(0xffF5F6FA);
   Color alto = const Color(0xffD9D9D9);
 
+  Color  green = const Color(0xff3396a1);
+  Color  tabText = const Color(0xff86afb7);
+  Color  appbar = const Color(0xffcae2e3);
+  Color  primarySwatch = const Color(0xff1C6BA4);
+
   ColorConstants._init();
 }

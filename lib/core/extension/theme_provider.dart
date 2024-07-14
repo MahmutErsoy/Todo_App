@@ -48,8 +48,8 @@ class MyThemes {
     textTheme: TextTheme(
       displayLarge: TextStyle(
         fontSize: 18.sp,
-        color: ColorConstants.instance.gray,
-        fontWeight: FontWeight.w500,
+        color: ColorConstants.instance.tundora,
+        fontWeight: FontWeight.w700,
       ),
       displayMedium: TextStyle(
         fontSize: 16.sp,
@@ -62,9 +62,9 @@ class MyThemes {
         fontWeight: FontWeight.w500,
       ),
       headlineMedium: TextStyle(
-        fontSize: 14.sp,
-        color: ColorConstants.instance.blueRibbon,
-        fontWeight: FontWeight.w500,
+        fontSize: 12.sp,
+        color: Colors.red,
+        fontWeight: FontWeight.w100,
       ),
       headlineSmall: TextStyle(
         fontSize: 14.sp,
